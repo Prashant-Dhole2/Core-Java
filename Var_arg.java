@@ -11,16 +11,19 @@
 public class Var_arg {
     static void fun(int ...a)
     {
-        System.out.println("Number of Arguments :"+a.length);
-    
-    for(int i:a)
-    {
-        System.out.println(i+" ");
+        System.out.println("number of arguments : " +a.length);
+        for(int i:a)
+        {
+            System.out.println(i+ " ");
+            
+        }
+        System.out.println();
     }
-    System.out.println();
+        public static void main(String args[])
+        {
+            fun(1,20,30,40,80,50,70);
+        }
     }
-    public static void main(String args[])
-    {
-        fun(10,20,30,40,50,60,70,80);
-    }
-}
+            
+  
+

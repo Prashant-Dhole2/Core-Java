@@ -8,7 +8,7 @@
  *
  * @author Dell
  */
-class MultithreadindinD implements Runnable
+class MultithreadindinDemo extends Thread
 {
     public void run()
     {
@@ -20,14 +20,15 @@ class MultithreadindinD implements Runnable
         }
     }
 }
-public class Multithreading_runnable {
-    public static void main(String args[])
-    {
-        int n = 8;
+public class Multithreding_threadClass {
+    public static void main(String args[]){
+        int n=10;
         for(int i=0;i<n;i++)
         {
-            Thread object = new Thread(new MultithreadindinD());
+            MultithreadindinDemo object = new MultithreadindinDemo();
             object.start();
         }
+        
     }
+    
 }
